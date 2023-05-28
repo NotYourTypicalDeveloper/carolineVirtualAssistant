@@ -68,8 +68,29 @@ const steps = [
   },
   {
     id: "programmingQ3",
-    message: `{previousValue} .., woahh!`,
+    message: `Cool and what language do you use?`,
+    trigger: "programmingQ4",
   },
+  {
+    id: "programmingQ4",
+    user: true,
+    trigger: "programmingQ5",
+  },
+  {
+    id: "programmingQ5",
+    message: ({ previousValue }) => {
+      console.log(previousValue);
+      const sameLanguage =
+        previousValue.toLowerCase().includes("javascript") ||
+        previousValue.toLowerCase().includes("js");
+      if (sameLanguage) {
+        return "Me, too! I've coded it for years!";
+      } else {
+        return `{previousValue}, woahhh!`;
+      }
+    },
+  },
+
   // "Ping pong" ================================================
   { id: "PPQ1", message: "Great, what's your level?" },
 ];
