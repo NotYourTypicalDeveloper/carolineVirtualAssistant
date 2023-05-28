@@ -1,5 +1,4 @@
-// dialog flow for "recruitment"
-// if user selects "recruitment" ================================================
+// dialog flow for "recruitment" ================================================
 const recruitmentPrompts = [
   {
     id: "recruitment",

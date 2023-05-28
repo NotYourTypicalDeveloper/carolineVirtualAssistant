@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       HELLO, I am the Chatbot <span>🤖 </span>
-      <Chatbot steps={steps} />
+      <Chatbot steps={steps} userDelay={1000} />
     </div>
   );
 }
