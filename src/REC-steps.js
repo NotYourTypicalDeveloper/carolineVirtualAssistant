@@ -2,10 +2,26 @@
 const recruitmentPrompts = [
   {
     id: "recruitment",
-    // TODO: add a settimeout between 2 sentences
-    message: `can't wait to hear what you have to offer. Any questions?`,
-    trigger: "rec-options",
+    message: `can't wait to hear what you have to offer!`,
+    trigger: "any-questions-rec",
   },
+  {
+    id: "any-questions-rec",
+    message: "Any questions?",
+    trigger: "any-questions-yesno",
+  },
+  {
+    id: "any-questions-yesno",
+    options: [
+      { value: "yes", label: "yes", trigger: "rec-options" },
+      {
+        value: "no",
+        label: "no",
+        trigger: "goodbye",
+      },
+    ],
+  },
+  // recruiter topic options -----------
   {
     id: "rec-options",
     options: [
