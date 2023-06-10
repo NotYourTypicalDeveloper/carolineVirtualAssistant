@@ -40,10 +40,8 @@ const rec_UserInputPrompts = [
     message: "anything else?",
     trigger: "restart-loop",
   },
-
   {
     id: "restart-loop",
-    message: "any other questions?",
     user: true,
     trigger: "listening-to-input",
   },
