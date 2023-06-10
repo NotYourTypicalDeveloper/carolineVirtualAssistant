@@ -4,16 +4,19 @@ import Chatbot from "react-simple-chatbot";
 import steps from "./MAIN-steps.js";
 
 function App() {
-  // Add a 1.5 second delay to each step
+  // Adds a 1.5 second delay to each step
   const stepsWithDelay = steps.map((step) => ({
     ...step,
-    delay: 1500,
+    delay: 1000,
   }));
 
   return (
     <div>
       HELLO, I am the Chatbot <span>🤖</span>
-      <Chatbot steps={stepsWithDelay} userDelay={1000} />
+      <Chatbot
+        steps={stepsWithDelay}
+        bubbleOptionStyle={{ backgroundColor: "white", color: "#b317b9" }}
+      />
     </div>
   );
 }

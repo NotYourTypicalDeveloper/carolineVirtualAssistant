@@ -1,5 +1,6 @@
 import recruitmentPrompts from "./REC-steps";
 import progPrompts from "./PROG-steps";
+import rec_UserInputPrompts from "./REC-userinputs-steps";
 
 // MAIN DIALOG FLOW
 const steps = [
@@ -37,13 +38,12 @@ const steps = [
         label: "want to play ping pong",
         trigger: "PPQ1",
       },
+      {
+        value: "other",
+        label: "something else",
+        trigger: "enter-your-question",
+      },
     ],
-  },
-
-  // TODO: list of prompts for any other questions
-  {
-    id: "list of prompts",
-    message: "list of prompts",
   },
 
   // Goodbye prompt
@@ -61,6 +61,9 @@ const steps = [
 
   // "Ping pong" ================================================
   { id: "PPQ1", message: "Great, what's your level?" },
+
+  // user input open prompts
+  ...rec_UserInputPrompts,
 ];
 
 export default steps;

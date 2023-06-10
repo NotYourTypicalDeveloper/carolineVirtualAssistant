@@ -24,7 +24,6 @@ const progPrompts = [
   {
     id: "programmingQ5",
     message: ({ previousValue }) => {
-      console.log(previousValue);
       const sameLanguage =
         previousValue.toLowerCase().includes("javascript") ||
         previousValue.toLowerCase().includes("js");
