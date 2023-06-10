@@ -30,7 +30,6 @@ const rec_UserInputPrompts = [
       ) {
         return "I am looking for a more ambitous challenge and better opportunities to grow as a developer";
       } else {
-        dontknow = true;
         return "I dont understand";
       }
     },
