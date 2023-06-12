@@ -19,6 +19,7 @@ function App() {
         bubbleOptionStyle={{ backgroundColor: "white", color: "#b317b9" }}
         userAvatar={userImg}
         botAvatar={chatbotImg}
+        headerTitle={`Caroline's chatbot`}
       />
     </div>
   );
