@@ -11,16 +11,14 @@ Follow the bot prompts, select any options or enter text.
 
 ### Assets:
 
-AI generated user image
-bot logo : <a href="https://www.vecteezy.com/free-vector/chatbot-logo">Chatbot Logo Vectors by Vecteezy</a>
+- AI generated user image
+- Bot logo : credit to <a href="https://www.vecteezy.com/free-vector/chatbot-logo">Chatbot Logo Vectors by Vecteezy</a>
 
 work on progress..!
 
 ## Upcoming features:
 
-- background image
 - add an option to display other topic tags (REC dialog flow)
-- add user picture
 - add a download CV button
 
 ## To run the project on your local machine:
