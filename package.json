@@ -1,5 +1,5 @@
 {
-  "homepage": "http://notyourtypicaldeveloper.github.io/caroline-virtual-assistant",
+  "homepage": "https://notyourtypicaldeveloper.github.io/caroline-virtual-assistant",
   "name": "caroline-virtual-assistant",
   "version": "0.1.0",
   "private": true,
@@ -15,11 +15,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
-    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
