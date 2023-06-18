@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/caroline-virtual-assistant/precache-manifest.7438f13423f4c02839d9ab25e6ebea5c.js"
+  "/carolineVirtualAssistant/precache-manifest.505581da6f21e8986388283cea836fcf.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/caroline-virtual-assistant/index.html", {
+workbox.routing.registerNavigationRoute("/carolineVirtualAssistant/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
