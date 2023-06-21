@@ -1,5 +1,6 @@
 import recruitmentPrompts from "./REC-steps";
 import progPrompts from "./PROG-steps";
+import pingPrompts from "./components/pingPrompts";
 import rec_UserInputPrompts from "./REC-userinputs-steps";
 
 // MAIN DIALOG FLOW
@@ -60,7 +61,7 @@ const steps = [
   ...progPrompts,
 
   // "Ping pong" ================================================
-  { id: "PPQ1", message: "Great, what's your level?" },
+  ...pingPrompts,
 
   // user input open prompts
   ...rec_UserInputPrompts,
