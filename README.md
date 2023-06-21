@@ -1,4 +1,6 @@
 # Say Hi to my virtual assistant
+<img src="https://github.com/NotYourTypicalDeveloper/carolineVirtualAssistant/assets/41584108/2498a26c-1f62-4645-a98d-3dcec1b5be2c"  width="465px">
+<img src="https://github.com/NotYourTypicalDeveloper/carolineVirtualAssistant/assets/41584108/b7326c29-d7d7-4db2-bd5b-e18fdf6600c6"  width="450px">
 
 This charming chatbot will reply to (most of) your questions / requests about recruitment and other topics.
 Follow the bot prompts, select any options or enter text.
