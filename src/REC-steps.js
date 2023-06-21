@@ -13,18 +13,13 @@ const recruitmentPrompts = [
   {
     id: "any-questions-yesno-answer",
     options: [
-      { value: "yes", label: "yes", trigger: "select-topic-rec" },
+      { value: "yes", label: "yes", trigger: "rec-options" },
       {
         value: "no",
         label: "no",
         trigger: "goodbye",
       },
     ],
-  },
-  {
-    id: "select-topic-rec",
-    message: "please select a recruitment topic",
-    trigger: "rec-options",
   },
 
   // recruiter topic options -----------
