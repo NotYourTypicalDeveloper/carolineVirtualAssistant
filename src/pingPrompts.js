@@ -29,14 +29,14 @@ const pingPrompts = [
   // Reject user
   {
     id: "beginner-lev",
-    message: "Sorry! that's not gonna work. Train more and come back later",
+    message:
+      "Sorry! I rather playing with mid to advanced players. Train more and come back later",
     trigger: "PP-reject",
   },
 
   {
     id: "garden-lev",
-    message:
-      "You played with your mates in their garden? Sorry, I prefer playing with professional Table tennis players",
+    message: "Sorry, but I rather playing with club players",
     trigger: "PP-reject",
   },
 

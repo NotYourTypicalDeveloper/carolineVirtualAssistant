@@ -1,6 +1,6 @@
 import recruitmentPrompts from "./REC-steps";
 import progPrompts from "./PROG-steps";
-import pingPrompts from "./components/pingPrompts";
+import pingPrompts from "./pingPrompts";
 import rec_UserInputPrompts from "./REC-userinputs-steps";
 
 // MAIN DIALOG FLOW

@@ -28,28 +28,64 @@ const recruitmentPrompts = [
     options: [
       {
         value: "salary expectation",
-        label: "salary expectation",
+        label: "Salary expectation",
         trigger: "salary-expectation",
       },
       {
         value: "notice period",
-        label: "notice period",
+        label: "Notice period",
         trigger: "notice-period",
       },
       {
         value: "work style",
-        label: "work style",
+        label: "Work style",
         trigger: "work-style",
       },
       {
         value: "right to work in UK",
-        label: "right to work in UK",
+        label: "Right to work in UK",
         trigger: "rights-work",
       },
       {
+        value: "current location",
+        label: "Current location",
+        trigger: "curr-location",
+      },
+      {
+        value: "preferred work style",
+        label: "Preferred work style",
+        trigger: "preferred-workstyle",
+      },
+      {
+        value: "Show other topics",
+        label: "Show me other topics",
+        trigger: "rec-options2",
+      },
+      {
         value: "other",
-        label: "other",
+        label: "Free question",
         trigger: "enter-your-question", // this prompt is located in "MAIN-steps.js"
+      },
+    ],
+  },
+
+  {
+    id: "rec-options2",
+    options: [
+      {
+        value: "Relocation",
+        label: "Relocation",
+        trigger: "relocation",
+      },
+      {
+        value: "Favorite Tech",
+        label: "Favorite Tech",
+        trigger: "fav-tech",
+      },
+      {
+        value: "Career interest",
+        label: "Career/Tech interests",
+        trigger: "tech-interests",
       },
     ],
   },
@@ -59,14 +95,16 @@ const recruitmentPrompts = [
     message: "Any other question?",
     trigger: "any-questions-yesno-answer",
   },
+
+  // Answers to tag topics
   {
     id: "salary-expectation",
-    message: `salary expected per year: multiply the magic number by 1000.`,
+    message: `£ ${process.env.REACT_APP_SALARY} / annum.`,
     trigger: "any-question-prompt",
   },
   {
     id: "notice-period",
-    message: `notice period : 3 months, might be negotiable.`,
+    message: `notice period : ${process.env.REACT_APP_NOTICEPERIOD}.`,
     trigger: "any-question-prompt",
   },
   {
@@ -81,10 +119,31 @@ const recruitmentPrompts = [
     message: `Don't worry! I have the settled status. I have unlimited right to work in the UK.`,
     trigger: "any-question-prompt",
   },
-  // {
-  //   id: "other",
-
-  // }
+  {
+    id: "curr-location",
+    message: `I am currently living in ${process.env.REACT_APP_LOCATION}`,
+    trigger: "any-question-prompt",
+  },
+  {
+    id: "preferred-workstyle",
+    message: `${process.env.REACT_APP_WORKSTYLE}`,
+    trigger: "any-question-prompt",
+  },
+  {
+    id: "relocation",
+    message: `${process.env.REACT_APP_RELOCATION}`,
+    trigger: "any-question-prompt",
+  },
+  {
+    id: "fav-tech",
+    message: `I am open to ${process.env.REACT_APP_FAV_TECH}`,
+    trigger: "any-question-prompt",
+  },
+  {
+    id: "tech-interests",
+    message: `I am in interested in ${process.env.REACT_APP_TECH_INTEREST}`,
+    trigger: "any-question-prompt",
+  },
 ];
 
 export default recruitmentPrompts;
