@@ -15,4 +15,4 @@
 .DS_Store
 *.env
 *.log
-
+.env.local
