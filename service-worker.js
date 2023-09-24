@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/carolineVirtualAssistant/precache-manifest.505581da6f21e8986388283cea836fcf.js"
+  "/carolineVirtualAssistant/precache-manifest.c90eb45c599ad5bc0aad99670117569b.js"
 );
 
 workbox.clientsClaim();
