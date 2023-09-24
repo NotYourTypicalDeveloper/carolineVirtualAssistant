@@ -1,0 +1,10 @@
+.app-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-image: radial-gradient(#67f0c3 2px, transparent 1px);
+  background-size: 45px 45px;
+  background-color: #a589f3;
+}
