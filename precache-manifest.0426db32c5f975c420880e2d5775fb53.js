@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "ef26e98f571ac9b01541",
-    "url": "/carolineVirtualAssistant/static/css/main.9fdbd951.chunk.css"
+    "revision": "3bb8dd8ab30e75f909be",
+    "url": "/carolineVirtualAssistant/static/css/main.0e83034b.chunk.css"
   },
   {
-    "revision": "ef26e98f571ac9b01541",
-    "url": "/carolineVirtualAssistant/static/js/main.269d29c7.chunk.js"
+    "revision": "3bb8dd8ab30e75f909be",
+    "url": "/carolineVirtualAssistant/static/js/main.372b437d.chunk.js"
   },
   {
     "revision": "21987dd7f72b0aec339d",
     "url": "/carolineVirtualAssistant/static/js/runtime~main.13513d3c.js"
   },
   {
-    "revision": "575514aa733f197f1805",
-    "url": "/carolineVirtualAssistant/static/js/2.bc2fac39.chunk.js"
+    "revision": "1e580edaa1525e8bd715",
+    "url": "/carolineVirtualAssistant/static/js/2.011dd70a.chunk.js"
   },
   {
     "revision": "d0621eb3852492709e51899762552eb0",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/carolineVirtualAssistant/static/media/chatbot-logo-bg.c2854fc2.jpg"
   },
   {
-    "revision": "c5fa731907c5c74e311496891f942cbe",
+    "revision": "6ab659a21bf013ff31c11ae771dd5e13",
     "url": "/carolineVirtualAssistant/index.html"
   }
 ];
