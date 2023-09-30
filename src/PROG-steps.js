@@ -33,6 +33,7 @@ const progPrompts = [
         return `{previousValue}, woahhh!`;
       }
     },
+    trigger: "give-email", // this prompt is in pingPrompts
   },
 ];
 

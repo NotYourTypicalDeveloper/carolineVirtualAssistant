@@ -7,7 +7,7 @@ import rec_UserInputPrompts from "./REC-userinputs-steps";
 const steps = [
   {
     id: "Greet",
-    message: `Hello, I am Caroline's personal assistant`,
+    message: `Hello, I am Caroline's personal assistant. I will reply to any questions you want to ask her.`,
     trigger: "Ask-name",
   },
   {
@@ -22,27 +22,22 @@ const steps = [
   },
   {
     id: "name-given",
-    message: `Hi, {previousValue}, what brings you here?`,
+    message: `Pleasure to meet you, {previousValue}. What brings you here?`,
     trigger: "contact-reasons",
   },
   {
     id: "contact-reasons",
     options: [
-      { value: "recruitment", label: "recruitment", trigger: "recruitment" },
+      { value: "recruitment", label: "Recruitment", trigger: "recruitment" },
       {
         value: "programming buddy",
-        label: "looking for a programming buddy",
+        label: "Looking for a programming buddy",
         trigger: "programmingQ1",
       },
       {
         value: "ping pong",
-        label: "want to play ping pong",
+        label: "Want to play ping pong",
         trigger: "PPQ1",
-      },
-      {
-        value: "other",
-        label: "something else",
-        trigger: "enter-your-question",
       },
     ],
   },

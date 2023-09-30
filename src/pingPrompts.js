@@ -109,10 +109,30 @@ const pingPrompts = [
     message: "Yes, me too! Let's practice and reach our goals!",
     trigger: "give-email",
   },
-  // give email to intermediate or advanced players
+  // give email to intermediate or advanced players or programmers
+  {
+    id: "give-contact-details",
+    message: "Let's arrange something!",
+    trigger: "give-email",
+  },
   {
     id: "give-email",
-    message: "You can send me an email : zarmaaprod@gmail.com! See you soon!",
+    options: [
+      {
+        value: "show-email",
+        label: "send me an email!",
+        trigger: "show-email",
+      },
+      {
+        value: "Back to main menu",
+        label: "Back to main menu",
+        trigger: "contact-reasons",
+      },
+    ],
+  },
+  {
+    id: "give-email",
+    message: `${process.env.REACT_APP_EMAILADDRESS} See you soon!`,
     end: true,
   },
 ];

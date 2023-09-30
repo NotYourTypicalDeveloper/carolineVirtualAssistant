@@ -19,15 +19,16 @@ function App() {
 
   return (
     <div className="app-container">
-      <Chatbot
-        steps={stepsWithDelay}
-        bubbleOptionStyle={{ backgroundColor: "white", color: "#b317b9" }}
-        userAvatar={userImg}
-        botAvatar={chatbotImg}
-        headerTitle={`Caroline's chatbot`}
-        width="600px"
-        height="700px"
-      />
+      <div className="bot-wrapper">
+        <Chatbot
+          steps={stepsWithDelay}
+          bubbleOptionStyle={{ backgroundColor: "white", color: "#b317b9" }}
+          userAvatar={userImg}
+          botAvatar={chatbotImg}
+          headerTitle={`Caroline's chatbot`}
+          width="100%"
+        />
+      </div>
     </div>
   );
 }
