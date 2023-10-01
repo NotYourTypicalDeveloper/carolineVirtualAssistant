@@ -15,7 +15,12 @@ const recruitmentPrompts = [
     options: [
       {
         value: "yes",
-        label: "yes, back to rec menu",
+        label: "yes, type my question",
+        trigger: "wait-for-rec-question",
+      },
+      {
+        value: "Back to rec menu",
+        label: "Yes, send me back to rec menu",
         trigger: "rec-options",
       },
       {
