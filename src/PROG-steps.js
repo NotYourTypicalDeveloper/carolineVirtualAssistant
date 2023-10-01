@@ -30,10 +30,10 @@ const progPrompts = [
       if (sameLanguage) {
         return "Me, too! I've coded it for years!";
       } else {
-        return `{previousValue}, woahhh!`;
+        return `{previousValue}, woahhh! let's chat.`;
       }
     },
-    trigger: "give-email", // this prompt is in pingPrompts
+    trigger: "give-contact-details", // this prompt is in pingPrompts
   },
 ];
 
