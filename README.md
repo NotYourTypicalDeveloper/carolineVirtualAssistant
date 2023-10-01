@@ -1,6 +1,8 @@
 # Say Hi to my virtual assistant
-<img src="https://github.com/NotYourTypicalDeveloper/carolineVirtualAssistant/assets/41584108/2498a26c-1f62-4645-a98d-3dcec1b5be2c"  width="465px">
-<img src="https://github.com/NotYourTypicalDeveloper/carolineVirtualAssistant/assets/41584108/b7326c29-d7d7-4db2-bd5b-e18fdf6600c6"  width="450px">
+
+![app screenshot1](src/assets/Screenshots/chatbotapp1.png)
+![app screenshot5](src/assets/Screenshots/chatbotapp5.png)
+![app screenshot3](src/assets/Screenshots/chatbotapp3.png)
 
 This chatbot will reply to (most of) your questions / requests about recruitment and other topics.
 Follow the bot prompts, select any options or enter text.
@@ -21,7 +23,7 @@ work on progress..!
 
 ## Upcoming features:
 
-]- add a download CV button
+- add a download CV button
 
 ## To run the project on your local machine:
 
