@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "3bb8dd8ab30e75f909be",
+    "revision": "56d16b77042f614650f4",
     "url": "/carolineVirtualAssistant/static/css/main.0e83034b.chunk.css"
   },
   {
-    "revision": "3bb8dd8ab30e75f909be",
-    "url": "/carolineVirtualAssistant/static/js/main.372b437d.chunk.js"
+    "revision": "56d16b77042f614650f4",
+    "url": "/carolineVirtualAssistant/static/js/main.550c11ea.chunk.js"
   },
   {
     "revision": "21987dd7f72b0aec339d",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/carolineVirtualAssistant/static/media/chatbot-logo-bg.c2854fc2.jpg"
   },
   {
-    "revision": "6ab659a21bf013ff31c11ae771dd5e13",
+    "revision": "19afd81d0c6fb9eb9ce9bc11a9da580b",
     "url": "/carolineVirtualAssistant/index.html"
   }
 ];
