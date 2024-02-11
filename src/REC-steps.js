@@ -158,7 +158,7 @@ const recruitmentPrompts = [
   // Answers to tag topics
   {
     id: "salary-expectation",
-    message: `£ ${process.env.REACT_APP_SALARY} / annum.`,
+    message: `${process.env.REACT_APP_SALARY}.`,
     trigger: "any-rec-question-prompt",
   },
   {
