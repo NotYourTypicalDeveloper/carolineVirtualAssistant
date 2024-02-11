@@ -2,11 +2,11 @@ const rec_UserInputPrompts = [
   {
     id: "enter-your-question",
     message:
-      "Please type your recruitment related question. (this feature is under experiment",
-    trigger: "wait-for-question",
+      "Please type your recruitment related question. Please note that I am not chatGPT. I can reply to few recruitment related questions as this feature is just a POC.",
+    trigger: "wait-for-rec-question",
   },
   {
-    id: "wait-for-question",
+    id: "wait-for-rec-question",
     user: true,
     trigger: "listening-to-input",
   },

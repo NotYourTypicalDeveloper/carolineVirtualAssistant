@@ -71,9 +71,8 @@ const pingPrompts = [
   {
     id: "inter-wait-user2",
     user: true,
-    trigger: "give-email",
+    trigger: "give-contact-details",
   },
-
   // Advanced
   {
     id: "advanced-lev",
@@ -94,29 +93,28 @@ const pingPrompts = [
   },
   {
     id: "league-yes",
-    message:
-      "Wow, awesome, well I hope I will be up to your standards. You can teach me some tricks",
-    trigger: "give-email",
+    message: "Wow, awesome, me too! Let's practice",
+    trigger: "give-email-or-back",
   },
   {
     id: "league-no",
     message:
       "It's all right, no need to be competitive. Let's practice if you'd like",
-    trigger: "give-email",
+    trigger: "give-email-or-back",
   },
   {
     id: "league-soon",
-    message: "Yes, me too! Let's practice and reach our goals!",
-    trigger: "give-email",
+    message: "OK. Let's practice and reach our goals!",
+    trigger: "give-email-or-back",
   },
   // give email to intermediate or advanced players or programmers
   {
     id: "give-contact-details",
     message: "Let's arrange something!",
-    trigger: "give-email",
+    trigger: "give-email-or-back",
   },
   {
-    id: "give-email",
+    id: "give-email-or-back",
     options: [
       {
         value: "show-email",
@@ -131,9 +129,19 @@ const pingPrompts = [
     ],
   },
   {
-    id: "give-email",
+    id: "show-email",
     message: `${process.env.REACT_APP_EMAILADDRESS} See you soon!`,
-    end: true,
+    trigger: "Back to main menu button",
+  },
+  {
+    id: "Back to main menu button",
+    options: [
+      {
+        value: "Back to main menu",
+        label: "Back to main menu",
+        trigger: "contact-reasons",
+      },
+    ],
   },
 ];
 
