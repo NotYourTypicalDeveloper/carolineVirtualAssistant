@@ -12,7 +12,7 @@ const steps = [
   },
   {
     id: "Ask-name",
-    message: "What's your name?",
+    message: "What's your name, buddy?",
     trigger: "waiting-for-name",
   },
   {
