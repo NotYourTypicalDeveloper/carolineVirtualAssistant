@@ -21,7 +21,7 @@ const rec_UserInputPrompts = [
       const regexExpYears = /\byears\b.*\bexperience\b/i;
       const prevVal = previousValue.toLowerCase();
       if (regexSkills.test(prevVal)) {
-        return "My main skills are JavaScript, TypeScript HTML, CSS, ReactJS, NextJS, chakra-ui, graphQL, API requests, React Testing library. and I have good experience of Microsoft Sharepoint development including RPA Automation, pure JS, CSS, HTML, MS365 eco-system.";
+        return `${process.env.REACT_APP_TECH_STACK}`;
       } else if (regexLocation.test(prevVal)) {
         return `I am based in ${process.env.REACT_APP_LOCATION}`;
       } else if (regexGreetings.test(prevVal)) {
@@ -33,7 +33,7 @@ const rec_UserInputPrompts = [
       } else if (regexCV.test(prevVal)) {
         return "sure, I will send it over. Meanwhile check my LinkedIn profile";
       } else if (regexExpYears.test(prevVal)) {
-        return `I have ${process.env.REACT_APP_YEARS_EXP} years of experience as a web developer.`;
+        return `I have ${yearsOfExp} years of experience as a web developer.`;
       } else {
         return "I dont understand";
       }
@@ -41,4 +41,6 @@ const rec_UserInputPrompts = [
     trigger: "any-rec-question-prompt",
   },
 ];
+
+const yearsOfExp = "5 yrs+";
 export default rec_UserInputPrompts;
