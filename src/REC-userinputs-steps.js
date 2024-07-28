@@ -33,7 +33,9 @@ const rec_UserInputPrompts = [
       } else if (regexCV.test(prevVal)) {
         return "sure, I will send it over. Meanwhile check my LinkedIn profile";
       } else if (regexExpYears.test(prevVal)) {
-        return `I have ${yearsOfExp} years of experience as a web developer.`;
+        return `I have ${calculateYearsOfExp(
+          2019
+        )} years+ commercial experience as a web developer.`;
       } else {
         return "I dont understand";
       }
@@ -42,5 +44,9 @@ const rec_UserInputPrompts = [
   },
 ];
 
-const yearsOfExp = "5 yrs+";
+const calculateYearsOfExp = (startYear) => {
+  const yearNow = new Date().getFullYear();
+  return `${yearNow - startYear}`;
+};
+
 export default rec_UserInputPrompts;
