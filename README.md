@@ -3,7 +3,9 @@
 Personal project featuring a specialized chatbot and virtual assistant designed to handle queries from recruiters during the screening process, as well as engage in casual, non-work-related conversations. The chatbot offers various menus and clickable option tags for user interaction, including a feature for open-ended questions. It's important to note that the open questions in this chatbot are pre-defined and not powered by artificial intelligence.
 Follow the bot prompts, select any options or enter text.
 
-## ⚡️ Link to live app (release V.2) : https://notyourtypicaldeveloper.github.io/carolineVirtualAssitant/
+## ⚡️ Link to live app (release V.2) :
+
+https://notyourtypicaldeveloper.github.io/carolineVirtualAssistant/
 
 ## 📸 Screenshots
 
