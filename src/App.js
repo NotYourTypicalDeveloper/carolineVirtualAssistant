@@ -1,9 +1,9 @@
 import React from "react";
-import "./App.css";
 import Chatbot from "react-simple-chatbot";
+import "./App.css";
 import steps from "./MAIN-steps.js";
-import userImg from "./assets/user1.jpg";
 import chatbotImg from "./assets/chatbot-logo-bg.jpg";
+import userImg from "./assets/user1.jpg";
 
 function App() {
   const stepsWithDelay = steps.map((step) => {
@@ -19,17 +19,15 @@ function App() {
 
   return (
     <div className="app-container">
-      <div className="bot-wrapper">
-        <Chatbot
-          steps={stepsWithDelay}
-          bubbleOptionStyle={{ backgroundColor: "white", color: "#b317b9" }}
-          userAvatar={userImg}
-          botAvatar={chatbotImg}
-          headerTitle={`Caroline's chatbot`}
-          width="100%"
-          height="100%"
-        />
-      </div>
+      <Chatbot
+        steps={stepsWithDelay}
+        bubbleOptionStyle={{ backgroundColor: "white", color: "#b317b9" }}
+        userAvatar={userImg}
+        botAvatar={chatbotImg}
+        headerTitle={`Caroline's chatbot`}
+        width="500px"
+        height="700px"
+      />
     </div>
   );
 }
