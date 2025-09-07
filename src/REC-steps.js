@@ -168,8 +168,7 @@ const recruitmentPrompts = [
   },
   {
     id: "work-style",
-    message:
-      "I am open to Hybrid up to 2 days at the office / week maximum, or fully remote.",
+    message: "I am open to hybrid or fully-remote work.",
     trigger: "any-rec-question-prompt",
   },
 
@@ -212,7 +211,7 @@ const recruitmentPrompts = [
 
   {
     id: "portfolio",
-    message: `My portfolio is under construction, although my side-projects are available on github: ${process.env.REACT_APP_GITHUB_URL}. `,
+    message: `My portfolio is available here: ${process.env.REACT_APP_PORTFOLIO}.`,
     trigger: "back-to-prev-rec-menu",
   },
   {

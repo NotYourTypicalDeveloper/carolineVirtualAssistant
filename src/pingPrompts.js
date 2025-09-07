@@ -9,9 +9,9 @@ const pingPrompts = [
     options: [
       { value: "beginner", label: "beginner", trigger: "beginner-lev" },
       {
-        value: "garden player",
-        label: "garden player",
-        trigger: "garden-lev",
+        value: "BBQ player",
+        label: "BBQ player",
+        trigger: "BBQ-lev",
       },
       {
         value: "intermediate",
@@ -35,7 +35,7 @@ const pingPrompts = [
   },
 
   {
-    id: "garden-lev",
+    id: "BBQ-lev",
     message: "Sorry, but I rather playing with club players",
     trigger: "PP-reject",
   },
