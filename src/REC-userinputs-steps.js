@@ -27,7 +27,7 @@ const rec_UserInputPrompts = [
       } else if (regexGreetings.test(prevVal)) {
         return "Hello";
       } else if (prevVal.includes("current situation")) {
-        return `I am currently employed at ${process.env.REACT_APP_CURR_COMPANY} as a Front-end developer.`;
+        return `I am actively looking for a role`;
       } else if (regexQuit.test(prevVal)) {
         return `${process.env.REACT_APP_REASON2LEAVE}`;
       } else if (regexCV.test(prevVal)) {
@@ -37,7 +37,7 @@ const rec_UserInputPrompts = [
           2019
         )} years+ commercial experience as a web developer.`;
       } else {
-        return "I dont understand";
+        return "Sorry, I dont understand.";
       }
     },
     trigger: "any-rec-question-prompt",
